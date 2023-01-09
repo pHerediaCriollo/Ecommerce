@@ -11,5 +11,10 @@ export class ComprasComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  comprado()
+  {
+    this.router.navigate(['web3'])
 
+  }
 }
+
