@@ -10,6 +10,10 @@ export class CarritoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.recuperar()
   }
-
+  recuperar()
+  {
+    this.Com = localStorage.getItem('Com');
+  }
 }

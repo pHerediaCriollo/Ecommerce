@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-compras',
@@ -8,13 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class ComprasComponent implements OnInit {
 
   constructor() { }
-
+  Com: any;
   ngOnInit(): void {
   }
   comprado()
   {
     this.router.navigate(['web3'])
-
+    this.Com = localStorage.getItem('Com');
   }
 }
 
