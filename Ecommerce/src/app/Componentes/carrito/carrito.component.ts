@@ -39,7 +39,7 @@ export class CarritoComponent implements OnInit {
     this.Saco = 39;
   }
   Tot(){
-    this.Total= suma();
+    this.Total= this.suma();
   }
   
 }
