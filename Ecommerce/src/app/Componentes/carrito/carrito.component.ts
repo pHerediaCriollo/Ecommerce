@@ -41,5 +41,4 @@ export class CarritoComponent implements OnInit {
   Tot(){
     this.Total= this.suma();
   }
-  
 }
