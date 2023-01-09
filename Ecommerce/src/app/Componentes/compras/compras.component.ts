@@ -7,11 +7,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./compras.component.css']
 })
 export class ComprasComponent implements OnInit {
+  router: any;
 
   constructor() { }
+  Canilleras: any;
+  Saco: any;
+  Guantes: any;
   Banco: any;
   Mancuernas: any;
   Tomatodos: any;
+  Rodilleras: any;
   ngOnInit(): void {
   }
   comprado()
@@ -20,6 +25,10 @@ export class ComprasComponent implements OnInit {
     this.Banco = localStorage.getItem('Banco');
     this.Mancuernas = localStorage.getItem('Mancuernas');
     this.Tomatodos = localStorage.getItem('Tomatodos');
+    this.Guantes = localStorage.getItem('Guantes');
+    this.Rodilleras = localStorage.getItem('Rodilleras');
+    this.Canilleras = localStorage.getItem('Canilleras');
+    this.Saco = localStorage.getItem('Saco');
   }
 }
 

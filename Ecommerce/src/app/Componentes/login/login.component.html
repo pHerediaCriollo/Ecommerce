@@ -3,4 +3,4 @@
 <input placeholder="CORREO ELECTRONICO" [(ngModel)]="correo" >
 <input type="CONTRASEÑA" placeholder="CONTRASEÑA" [(ngModel)]="contra" >
 <h3 style="color:darkgray; text-align:center;">¿Olvido su contraseña?</h3>
-<button (click)="registrado()" style="margin:center; outline-offset: 3px;outline: 3px greenyellow;">INGRESAR.</button>
+<button (click)="registrado()" style="margin:center; outline-offset: 3px;outline: 3px greenyellow;" *ngIf="correo==paulheredia106@gmail.com">INGRESAR.</button>

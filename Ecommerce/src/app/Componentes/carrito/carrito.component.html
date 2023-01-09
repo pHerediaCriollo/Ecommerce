@@ -1,6 +1,15 @@
-<p>SUS COMPRAS FUERON:</p>
-    {{Banco}}
-    {{Tomatodos}}
-    {{Mancuernas}}
+<p >SUS COMPRAS FUERON:</p>
+<h2 *ngIf={{Banco}}>BANCO DE PESAS.</h2>
+
+<h2 *ngIf={{Tomatodo}}>Tomatodo.</h2>
+
+<h2 *ngIf={{Mancuernas}}>Mancuernas.</h2>
+
+<h2 *ngIf={{Guantes}}>BGuantes de box.</h2>
+
+<h2 *ngIf={{Canilleras}}>Canilleras.</h2>
+
+<h2 *ngIf={{Saco}}>Saco de box.</h2>
+</br>
 <button (click)='web2'>Compras</button>
 <button (click)=''>LOGIN</button>
