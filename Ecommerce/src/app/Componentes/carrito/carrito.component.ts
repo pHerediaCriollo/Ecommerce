@@ -8,12 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class CarritoComponent implements OnInit {
 
   constructor() { }
-
+  Banco: any;
+  Mancuernas: any;
+  Tomatodos: any;
   ngOnInit(): void {
     this.recuperar()
   }
   recuperar()
   {
-    this.Com = localStorage.getItem('Com');
+    this.Banco = localStorage.getItem('Banco');
+    this.Mancuernas = localStorage.getItem('Mancuernas');
+    this.Tomatodos = localStorage.getItem('Tomatodos');
   }
 }

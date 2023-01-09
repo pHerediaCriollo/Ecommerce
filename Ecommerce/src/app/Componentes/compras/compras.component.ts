@@ -9,13 +9,17 @@ import { Router } from '@angular/router';
 export class ComprasComponent implements OnInit {
 
   constructor() { }
-  Com: any;
+  Banco: any;
+  Mancuernas: any;
+  Tomatodos: any;
   ngOnInit(): void {
   }
   comprado()
   {
     this.router.navigate(['web3'])
-    this.Com = localStorage.getItem('Com');
+    this.Banco = localStorage.getItem('Banco');
+    this.Mancuernas = localStorage.getItem('Mancuernas');
+    this.Tomatodos = localStorage.getItem('Tomatodos');
   }
 }
 
