@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./carrito.component.css']
 })
 export class CarritoComponent implements OnInit {
+  Total: any;
   Canilleras: any;
   Saco: any;
   Guantes: any;
@@ -28,4 +29,17 @@ export class CarritoComponent implements OnInit {
     this.Canilleras = localStorage.getItem('Canilleras');
     this.Saco = localStorage.getItem('Saco');
   }
+  suma(){
+    this.Banco = 270;
+    this.Mancuernas =70 ;
+    this.Tomatodos = 15;
+    this.Guantes = 32;
+    this.Rodilleras = 28;
+    this.Canilleras = 17;
+    this.Saco = 39;
+  }
+  Tot(){
+    this.Total= suma();
+  }
+  
 }
