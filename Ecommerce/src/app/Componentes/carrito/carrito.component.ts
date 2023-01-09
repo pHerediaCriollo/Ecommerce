@@ -8,9 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class CarritoComponent implements OnInit {
 
   constructor() { }
-  Banco: any;
-  Mancuernas: any;
-  Tomatodos: any;
   ngOnInit(): void {
     this.recuperar()
   }
